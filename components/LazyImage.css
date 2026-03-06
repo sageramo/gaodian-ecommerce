@@ -1,0 +1,20 @@
+.lazy-image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-image.loading {
+  opacity: 0.6;
+  filter: blur(5px);
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Ensure images maintain aspect ratio while loading */
+.lazy-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

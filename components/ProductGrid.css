@@ -1,0 +1,35 @@
+.product-grid {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.product-grid-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+.product-grid-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .product-grid {
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-grid .ant-col-xl-6 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

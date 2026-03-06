@@ -1,0 +1,165 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.carousel-slide {
+  position: relative;
+  height: 500px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  /* 添加背景图片支持 */
+  background-image: url('/images/jingbajian-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* 如果没有图片，使用渐变色作为后备 */
+  background-blend-mode: overlay;
+}
+
+.carousel-slide-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.carousel-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  max-width: 800px;
+}
+
+.carousel-title {
+  color: white !important;
+  font-size: 48px !important;
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-description {
+  color: white !important;
+  font-size: 20px !important;
+  margin-bottom: 30px !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* 增加遮罩透明度，让文字更清晰 */
+  z-index: 1;
+}
+
+/* Category Section */
+.category-section {
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.category-tabs {
+  margin-bottom: 20px;
+}
+
+.category-tabs .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 350px;
+  }
+
+  .carousel-title {
+    font-size: 32px !important;
+  }
+
+  .carousel-description {
+    font-size: 16px !important;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .category-tabs .ant-tabs-tab {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .category-section {
+    padding: 20px 10px;
+  }
+
+  .products-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    height: 280px;
+  }
+
+  .carousel-title {
+    font-size: 24px !important;
+  }
+
+  .carousel-description {
+    font-size: 14px !important;
+  }
+
+  .carousel-content {
+    padding: 20px 15px;
+  }
+}
+
+/* Carousel navigation dots */
+.hero-section .ant-carousel .slick-dots {
+  bottom: 20px;
+}
+
+.hero-section .ant-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5);
+  height: 8px;
+}
+
+.hero-section .ant-carousel .slick-dots li.slick-active button {
+  background: white;
+  width: 24px;
+}

@@ -1,0 +1,11 @@
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+.page-loader .ant-spin {
+  color: #1890ff;
+}

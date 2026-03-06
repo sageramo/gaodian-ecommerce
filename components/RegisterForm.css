@@ -1,0 +1,36 @@
+.register-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.register-form {
+  padding: 24px;
+}
+
+.register-button {
+  margin-top: 8px;
+}
+
+.register-error {
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
+}
+
+.error-text {
+  color: #ff4d4f;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .register-form-container {
+    max-width: 100%;
+  }
+
+  .register-form {
+    padding: 16px;
+  }
+}
