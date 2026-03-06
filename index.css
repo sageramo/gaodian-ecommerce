@@ -2,16 +2,16 @@
 @import "tailwindcss";
 
 /* Import CSS Variables */
-@import './styles/variables.css';
+@import '.variables.css';
 
 /* Import Global Styles */
 @import './styles/global.css';
 
 /* Import Utility Classes */
-@import './styles/utilities.css';
+@import '.utilities.css';
 
 /* Import Responsive Utilities */
-@import './styles/responsive.css';
+@import '.responsive.css';
 
 /* Import Animations */
 @import './styles/animations.css';
