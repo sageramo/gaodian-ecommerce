@@ -1,0 +1,159 @@
+.cart-item {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.cart-item-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
+}
+
+.cart-item-image {
+  flex-shrink: 0;
+}
+
+.cart-item-image img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item-name {
+  margin: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-item-price {
+  font-size: 14px;
+}
+
+.cart-item-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-label {
+  font-size: 12px;
+}
+
+.quantity-input {
+  width: 80px;
+}
+
+.cart-item-subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 100px;
+}
+
+.subtotal-label {
+  font-size: 12px;
+}
+
+.subtotal-amount {
+  font-size: 18px;
+  color: #ff4d4f;
+}
+
+.cart-item-actions {
+  flex-shrink: 0;
+}
+
+.remove-text {
+  margin-left: 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .cart-item-content {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .cart-item-image {
+    width: 80px;
+  }
+
+  .cart-item-image img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .cart-item-info {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .cart-item-quantity {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .quantity-label {
+    display: none;
+  }
+
+  .cart-item-subtotal {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-item-actions {
+    width: 100%;
+  }
+
+  .cart-item-actions button {
+    width: 100%;
+  }
+
+  .remove-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item-content {
+    padding: 4px;
+  }
+
+  .cart-item-image {
+    width: 60px;
+  }
+
+  .cart-item-image img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .cart-item-name {
+    font-size: 14px;
+  }
+
+  .subtotal-amount {
+    font-size: 16px;
+  }
+}

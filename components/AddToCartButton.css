@@ -1,0 +1,30 @@
+.add-to-cart-with-quantity {
+  display: flex;
+  align-items: stretch;
+}
+
+.add-to-cart-with-quantity .quantity-input {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.add-to-cart-with-quantity .add-to-cart-btn {
+  flex: 1;
+  min-width: 140px;
+}
+
+.add-to-cart-btn {
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .add-to-cart-with-quantity .quantity-input {
+    width: 80px;
+  }
+
+  .add-to-cart-with-quantity .add-to-cart-btn {
+    min-width: 120px;
+    font-size: 14px;
+  }
+}

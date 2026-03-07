@@ -1,0 +1,274 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.carousel-slide {
+  position: relative;
+  height: 500px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 糕 - 传统糕点，温暖的橙红色调 */
+.carousel-slide-gao {
+  background: linear-gradient(rgba(240, 147, 251, 0.7), rgba(245, 87, 108, 0.7)),
+              url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 梁 - 桥梁连接，深邃的蓝紫色调 */
+.carousel-slide-liang {
+  background: linear-gradient(rgba(102, 126, 234, 0.7), rgba(118, 75, 162, 0.7)),
+              url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 锦 - 丝织工艺，华丽的金红色调 */
+.carousel-slide-jin {
+  background: linear-gradient(rgba(250, 112, 154, 0.7), rgba(254, 225, 64, 0.7)),
+              url('https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 绣 - 精细工艺，清新的青绿色调 */
+.carousel-slide-xiu {
+  background: linear-gradient(rgba(79, 172, 254, 0.7), rgba(0, 242, 254, 0.7)),
+              url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 保留旧样式以防兼容性问题 */
+.carousel-slide-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background-image: url('/images/jingbajian-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.carousel-slide-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.carousel-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  max-width: 800px;
+}
+
+.carousel-title {
+  color: white !important;
+  font-size: 48px !important;
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-description {
+  color: white !important;
+  font-size: 20px !important;
+  margin-bottom: 30px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* 适度的遮罩，让文字清晰同时背景可见 */
+  z-index: 1;
+}
+
+/* Category Section */
+.category-section {
+  padding: 40px 20px;
+  background-color: transparent; /* 使用全局背景色 */
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.category-tabs {
+  margin-bottom: 20px;
+}
+
+.category-tabs .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 20px;
+  max-width: 1600px;  /* 增加到1600px */
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 350px;
+  }
+
+  .carousel-title {
+    font-size: 32px !important;
+  }
+
+  .carousel-description {
+    font-size: 16px !important;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .category-tabs .ant-tabs-tab {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .category-section {
+    padding: 20px 10px;
+  }
+
+  .products-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    height: 280px;
+  }
+
+  .carousel-title {
+    font-size: 24px !important;
+  }
+
+  .carousel-description {
+    font-size: 14px !important;
+  }
+
+  .carousel-content {
+    padding: 20px 15px;
+  }
+}
+
+/* Carousel navigation dots */
+.hero-section .ant-carousel .slick-dots {
+  bottom: 20px;
+}
+
+.hero-section .ant-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5);
+  height: 8px;
+}
+
+.hero-section .ant-carousel .slick-dots li.slick-active button {
+  background: white;
+  width: 24px;
+}
+
+/* Carousel navigation arrows */
+.hero-section .ant-carousel .slick-prev,
+.hero-section .ant-carousel .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.hero-section .ant-carousel .slick-prev:hover,
+.hero-section .ant-carousel .slick-next:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.hero-section .ant-carousel .slick-prev {
+  left: 30px;
+}
+
+.hero-section .ant-carousel .slick-next {
+  right: 30px;
+}
+
+.hero-section .ant-carousel .slick-prev::before,
+.hero-section .ant-carousel .slick-next::before {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 移动端箭头样式调整 */
+@media (max-width: 768px) {
+  .hero-section .ant-carousel .slick-prev,
+  .hero-section .ant-carousel .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-section .ant-carousel .slick-prev {
+    left: 10px;
+  }
+
+  .hero-section .ant-carousel .slick-next {
+    right: 10px;
+  }
+
+  .hero-section .ant-carousel .slick-prev::before,
+  .hero-section .ant-carousel .slick-next::before {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .ant-carousel .slick-prev,
+  .hero-section .ant-carousel .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero-section .ant-carousel .slick-prev {
+    left: 5px;
+  }
+
+  .hero-section .ant-carousel .slick-next {
+    right: 5px;
+  }
+
+  .hero-section .ant-carousel .slick-prev::before,
+  .hero-section .ant-carousel .slick-next::before {
+    font-size: 30px;
+  }
+}

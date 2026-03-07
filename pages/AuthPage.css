@@ -1,0 +1,158 @@
+.auth-page {
+  min-height: calc(100vh - 64px - 200px);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.auth-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.auth-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.auth-page-brand {
+  text-align: center;
+  color: white;
+}
+
+.auth-page-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-page-description {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.auth-card .ant-card-body {
+  padding: 32px;
+}
+
+.auth-form-wrapper {
+  width: 100%;
+}
+
+.auth-form-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-form-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #262626;
+}
+
+.auth-form-subtitle {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.auth-form-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.auth-form-footer p {
+  margin: 0;
+  color: #595959;
+  font-size: 14px;
+}
+
+.auth-switch-link {
+  color: #1890ff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-switch-link:hover {
+  text-decoration: underline;
+}
+
+/* Tabs styling */
+.auth-card .ant-tabs-nav {
+  margin-bottom: 32px;
+}
+
+.auth-card .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.auth-card .ant-tabs-tab-active {
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 20px 16px;
+    min-height: calc(100vh - 64px - 150px);
+  }
+
+  .auth-page-title {
+    font-size: 36px;
+  }
+
+  .auth-page-description {
+    font-size: 16px;
+  }
+
+  .auth-card {
+    max-width: 100%;
+  }
+
+  .auth-card .ant-card-body {
+    padding: 24px 16px;
+  }
+
+  .auth-form-header h2 {
+    font-size: 20px;
+  }
+
+  .auth-card .ant-tabs-tab {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-page-title {
+    font-size: 28px;
+  }
+
+  .auth-page-description {
+    font-size: 14px;
+  }
+
+  .auth-card .ant-card-body {
+    padding: 20px 12px;
+  }
+}

@@ -1,0 +1,582 @@
+/**
+ * 糕点产品数据配置
+ * 
+ * 高点·清包局 14款糕点产品
+ * 分为三大系列：核心经典系列、节庆限定系列、东南亚风味系列
+ */
+
+export const beijingStylePastries = [
+  // ========== 核心经典系列 ==========
+  {
+    id: 'pastry-001',
+    name: {
+      zh: '「弈味·山河」经典象棋套装',
+      en: 'Yi Wei Shan He Classic Chess Set',
+      ja: '「弈味·山河」クラシックチェスセット'
+    },
+    description: {
+      zh: '中国象棋主题糕点套装，32枚棋型酥饼，融合传统汉河文化，全年常销，适合商务礼赠、会议茶歇。',
+      en: 'Chinese chess-themed pastry set with 32 chess-shaped cookies, year-round bestseller.',
+      ja: '中国象棋をテーマにしたお菓子セット、32個の駒型クッキー入り。'
+    },
+    price: 168.00,
+    stock: 100,
+    images: [
+      '/images/products/yiwei-shanhe-1.jpg',
+      '/images/products/yiwei-shanhe-2.jpg'
+    ],
+    category: 'core-classic',
+    season: 'all-year',
+    market: 'global',
+    theme: '中国象棋·汉河',
+    packaging: '32枚棋型酥饼',
+    occasion: '商务礼赠、会议茶歇',
+    heritageStory: {
+      zh: '以中国象棋为灵感，将传统棋文化与糕点工艺完美结合，每一枚棋子都承载着千年智慧。',
+      en: 'Inspired by Chinese chess, perfectly combining traditional chess culture with pastry craftsmanship.',
+      ja: '中国象棋からインスピレーションを得て、伝統的な棋文化とお菓子の技術を完璧に融合。'
+    },
+    specifications: {
+      weight: '实木棋盘',
+      shelfLife: '全年常销',
+      ingredients: '小麦粉、白糖、食用油等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-002',
+    name: {
+      zh: '「玲珑·局」围棋贺馈礼盒',
+      en: 'Ling Long Ju Go Gift Box',
+      ja: '「玲珑·局」囲碁ギフトボックス'
+    },
+    description: {
+      zh: '围棋主题糕点礼盒，361枚双色糕点，融合中国围棋文化与黑白禅意，全年常销，适合禅意度假、个人收藏。',
+      en: 'Go-themed pastry gift box with 361 dual-color pastries, year-round availability.',
+      ja: '囲碁をテーマにしたお菓子ギフトボックス、361個の2色お菓子入り。'
+    },
+    price: 288.00,
+    stock: 80,
+    images: [
+      '/images/products/linglong-ju-1.jpg',
+      '/images/products/linglong-ju-2.jpg'
+    ],
+    category: 'core-classic',
+    season: 'all-year',
+    market: 'global',
+    theme: '中国围棋·黑白禅意',
+    packaging: '361枚双色糕点',
+    occasion: '禅意度假、个人收藏',
+    heritageStory: {
+      zh: '围棋黑白两色，蕴含阴阳哲学，361枚糕点对应棋盘交叉点，每一颗都是对传统文化的致敬。',
+      en: 'Black and white Go pieces embody Yin-Yang philosophy, 361 pastries correspond to board intersections.',
+      ja: '囲碁の黒白は陰陽哲学を体現し、361個のお菓子は盤面の交点に対応。'
+    },
+    specifications: {
+      weight: '德化白瓷棋盘',
+      shelfLife: '全年常销',
+      ingredients: '小麦粉、白糖、黑芝麻、食用油等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-003',
+    name: {
+      zh: '「飞行棋·趣」家庭欢乐套餐',
+      en: 'Fei Xing Qi Qu Family Fun Set',
+      ja: '「飛行棋·趣」ファミリー楽しみセット'
+    },
+    description: {
+      zh: '飞行棋主题家庭套餐，16枚卡通包子，融合山海经飞行棋元素，全年常销，适合亲子互动、国际课堂。',
+      en: 'Flying chess-themed family set with 16 cartoon buns, year-round bestseller.',
+      ja: '飛行棋をテーマにしたファミリーセット、16個のカートゥーン包子入り。'
+    },
+    price: 98.00,
+    stock: 150,
+    images: [
+      '/images/products/feixingqi-qu-1.jpg',
+      '/images/products/feixingqi-qu-2.jpg'
+    ],
+    category: 'core-classic',
+    season: 'all-year',
+    market: 'global',
+    theme: '山海经·飞行棋',
+    packaging: '16枚卡通包子',
+    occasion: '亲子互动、国际课堂',
+    heritageStory: {
+      zh: '将山海经神兽与飞行棋结合，让孩子在游戏中了解中国传统文化，寓教于乐。',
+      en: 'Combining Shan Hai Jing mythical creatures with flying chess, educational and entertaining.',
+      ja: '山海経の神獣と飛行棋を組み合わせ、遊びながら中国伝統文化を学べる。'
+    },
+    specifications: {
+      weight: '山海经卷轴地图',
+      shelfLife: '全年常销',
+      ingredients: '小麦粉、白糖、食用油、可可粉等',
+      storage: '常温避光保存'
+    }
+  },
+
+  // ========== 节庆限定系列 ==========
+  {
+    id: 'pastry-004',
+    name: {
+      zh: '「福满乾坤」守岁象棋礼盒',
+      en: 'Fu Man Qian Kun Spring Festival Chess Box',
+      ja: '「福満乾坤」春節チェスギフトボックス'
+    },
+    description: {
+      zh: '春节限定象棋礼盒，32枚福字棋型糕点，融合福文化与守岁传统，适合除夕家庭聚、拜年送礼。',
+      en: 'Spring Festival limited edition chess box with 32 Fu-character chess pastries.',
+      ja: '春節限定チェスボックス、32個の福の字駒型お菓子入り。'
+    },
+    price: 198.00,
+    stock: 120,
+    images: [
+      '/images/products/fuman-qiankun-1.jpg',
+      '/images/products/fuman-qiankun-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'spring-festival',
+    seasonPeriod: '1-2月',
+    market: 'global-chinese',
+    theme: '福文化+守岁',
+    packaging: '32枚福字棋型糕点',
+    occasion: '除夕家庭聚、拜年送礼',
+    heritageStory: {
+      zh: '春节守岁传统与象棋文化结合，每枚糕点都印有福字，寓意新年福运连连。',
+      en: 'Combining Spring Festival traditions with chess culture, each pastry bears the Fu character for good fortune.',
+      ja: '春節の伝統とチェス文化を融合、各お菓子に福の字が刻まれ、新年の幸運を象徴。'
+    },
+    specifications: {
+      weight: '红色雕花桂盘',
+      shelfLife: '春节（1-2月）',
+      ingredients: '小麦粉、白糖、食用油、红曲粉等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-005',
+    name: {
+      zh: '「十二生肖」国棋贺岁装',
+      en: 'Twelve Zodiac Chess New Year Set',
+      ja: '「十二生肖」チェス新年セット'
+    },
+    description: {
+      zh: '春节限定生肖主题，361枚生肖福字糕点，融合生肖轮与祈福文化，适合本命年送礼、收藏。',
+      en: 'Spring Festival zodiac-themed set with 361 zodiac Fu pastries.',
+      ja: '春節限定干支テーマ、361個の干支福お菓子入り。'
+    },
+    price: 328.00,
+    stock: 60,
+    images: [
+      '/images/products/shengxiao-hesui-1.jpg',
+      '/images/products/shengxiao-hesui-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'spring-festival',
+    seasonPeriod: '1-2月',
+    market: 'global-chinese',
+    theme: '生肖轮+祈福',
+    packaging: '361枚生肖福字糕',
+    occasion: '本命年送礼、收藏',
+    heritageStory: {
+      zh: '十二生肖是中国传统文化符号，每年生肖轮转，糕点融入当年生肖元素，承载美好祝愿。',
+      en: 'Twelve zodiac animals are traditional Chinese cultural symbols, pastries feature the current year\'s zodiac.',
+      ja: '十二支は中国の伝統文化シンボル、お菓子には今年の干支要素が組み込まれている。'
+    },
+    specifications: {
+      weight: '生肖图鉴手册',
+      shelfLife: '春节（1-2月）',
+      ingredients: '小麦粉、白糖、食用油、天然色素等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-006',
+    name: {
+      zh: '「Jingle Moves」圣诞棋时趣日历',
+      en: 'Jingle Moves Christmas Chess Calendar',
+      ja: '「Jingle Moves」クリスマスチェスカレンダー'
+    },
+    description: {
+      zh: '圣诞限定日历礼盒，24枚棋型饼干+棋谱卡，融合圣诞倒计时与国际象棋启蒙，适合家庭亲子、圣诞礼物。',
+      en: 'Christmas limited calendar box with 24 chess cookies and chess cards.',
+      ja: 'クリスマス限定カレンダーボックス、24個のチェスクッキーとチェスカード入り。'
+    },
+    price: 158.00,
+    stock: 100,
+    images: [
+      '/images/products/jingle-moves-1.jpg',
+      '/images/products/jingle-moves-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'christmas',
+    seasonPeriod: '12月',
+    market: 'europe-america',
+    theme: '圣诞倒计时+国际象棋启蒙',
+    packaging: '24枚棋型饼干+棋谱卡',
+    occasion: '家庭亲子、圣诞礼物',
+    heritageStory: {
+      zh: '将西方圣诞倒数日历与国际象棋结合，每天打开一格，学习一个棋谱，寓教于乐。',
+      en: 'Combining Western Christmas advent calendar with international chess, learn a chess move each day.',
+      ja: '西洋のクリスマスアドベントカレンダーと国際チェスを融合、毎日1つの棋譜を学ぶ。'
+    },
+    specifications: {
+      weight: '迷你折叠棋盘',
+      shelfLife: '圣诞（12月）',
+      ingredients: '小麦粉、白糖、黄油、肉桂粉等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-007',
+    name: {
+      zh: '「Diwali Checkmate」排灯棋局礼盒',
+      en: 'Diwali Checkmate Festival Gift Box',
+      ja: '「Diwali Checkmate」ディワリギフトボックス'
+    },
+    description: {
+      zh: '排灯节限定礼盒，32枚印度风味棋糕+油灯糕，融合印度甜点与国际象棋起源，适合节日送礼。',
+      en: 'Diwali limited gift box with 32 Indian-flavored chess pastries and oil lamp cakes.',
+      ja: 'ディワリ限定ギフトボックス、32個のインド風味チェスお菓子とオイルランプケーキ入り。'
+    },
+    price: 178.00,
+    stock: 80,
+    images: [
+      '/images/products/diwali-checkmate-1.jpg',
+      '/images/products/diwali-checkmate-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'diwali',
+    seasonPeriod: '10-11月',
+    market: 'india-southeast-asia',
+    theme: '印度甜点+国际象棋起源',
+    packaging: '32枚印度风味棋糕+油灯糕',
+    occasion: '铜质圆盘、Rangoli桌旗',
+    heritageStory: {
+      zh: '排灯节是印度最重要的节日，糕点融入印度传统甜点风味，结合国际象棋起源文化。',
+      en: 'Diwali is India\'s most important festival, pastries incorporate traditional Indian sweet flavors.',
+      ja: 'ディワリはインドで最も重要な祭り、お菓子には伝統的なインドの甘味が組み込まれている。'
+    },
+    specifications: {
+      weight: '铜质圆盘、Rangoli桌旗',
+      shelfLife: '排灯节（10-11月）',
+      ingredients: '小麦粉、白糖、豆蔻、藏红花等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-008',
+    name: {
+      zh: '「Harvest Gambit」秋收感恩棋盘',
+      en: 'Harvest Gambit Thanksgiving Chess Board',
+      ja: '「Harvest Gambit」感謝祭チェスボード'
+    },
+    description: {
+      zh: '感恩节限定棋盘，32枚感恩节风味棋糕，融合感恩节大餐与国际象棋，适合感恩节家庭聚餐。',
+      en: 'Thanksgiving limited chess board with 32 Thanksgiving-flavored chess pastries.',
+      ja: '感謝祭限定チェスボード、32個の感謝祭風味チェスお菓子入り。'
+    },
+    price: 168.00,
+    stock: 90,
+    images: [
+      '/images/products/harvest-gambit-1.jpg',
+      '/images/products/harvest-gambit-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'thanksgiving',
+    seasonPeriod: '11月',
+    market: 'north-america',
+    theme: '感恩节大餐+国际象棋',
+    packaging: '32枚感恩节风味棋糕',
+    occasion: '丰收餐桌棋盘',
+    heritageStory: {
+      zh: '感恩节是北美重要节日，糕点融入南瓜、火鸡等传统元素，在棋局中品味感恩。',
+      en: 'Thanksgiving is an important North American holiday, pastries incorporate pumpkin and turkey elements.',
+      ja: '感謝祭は北米の重要な祝日、お菓子にはカボチャや七面鳥などの伝統要素が組み込まれている。'
+    },
+    specifications: {
+      weight: '丰收餐桌棋盘',
+      shelfLife: '感恩节（11月）',
+      ingredients: '小麦粉、白糖、南瓜泥、肉桂等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-009',
+    name: {
+      zh: '「Moonlit Match」弈月中秋礼盒',
+      en: 'Moonlit Match Mid-Autumn Gift Box',
+      ja: '「Moonlit Match」中秋ギフトボックス'
+    },
+    description: {
+      zh: '中秋限定礼盒，361枚冰皮酥皮月饼棋，融合弈月传说与中秋文化，适合赏月团聚、中秋送礼。',
+      en: 'Mid-Autumn limited gift box with 361 snow skin and flaky mooncake chess pieces.',
+      ja: '中秋限定ギフトボックス、361個の雪肌とフレーキー月餅チェス駒入り。'
+    },
+    price: 298.00,
+    stock: 100,
+    images: [
+      '/images/products/moonlit-match-1.jpg',
+      '/images/products/moonlit-match-2.jpg'
+    ],
+    category: 'festival-limited',
+    season: 'mid-autumn',
+    seasonPeriod: '9-10月',
+    market: 'global-chinese-east-asia',
+    theme: '弈月传说+中秋文化',
+    packaging: '361枚冰皮酥皮月饼棋',
+    occasion: '圆月棋盘、烧金泊棋',
+    heritageStory: {
+      zh: '中秋赏月，古人常在月下对弈，糕点将月饼与棋子结合，传承弈月雅趣。',
+      en: 'During Mid-Autumn moon viewing, ancients played chess under the moon, pastries combine mooncakes with chess.',
+      ja: '中秋の月見の際、古人は月の下で対局し、お菓子は月餅とチェス駒を融合。'
+    },
+    specifications: {
+      weight: '圆月棋盘、烧金泊棋',
+      shelfLife: '中秋（9-10月）',
+      ingredients: '小麦粉、白糖、莲蓉、咸蛋黄等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-010',
+    name: {
+      zh: '「芒果·糯」香人套餐',
+      en: 'Mango Glutinous Rice Set',
+      ja: '「マンゴー·もち米」セット'
+    },
+    description: {
+      zh: '泰式芒果糯米饭双人对弈套餐，30枚双色棋子，融合泰国东南亚旅游市场特色，适合情侣约会、度假酒店。',
+      en: 'Thai mango sticky rice chess set for two with 30 dual-color pieces.',
+      ja: 'タイマンゴーもち米チェスセット、30個の2色駒入り。'
+    },
+    price: 138.00,
+    stock: 80,
+    images: [
+      '/images/products/mangguo-nuo-1.jpg',
+      '/images/products/mangguo-nuo-2.jpg'
+    ],
+    category: 'southeast-asia',
+    season: 'all-year',
+    market: 'thailand-southeast-asia',
+    theme: '泰式芒果糯米饭·双人对弈',
+    packaging: '30枚双色棋子',
+    occasion: '芭蕉叶托盘、椰浆酱料',
+    heritageStory: {
+      zh: '泰式芒果糯米饭是东南亚经典甜品，将其与棋文化结合，打造独特的文化体验。',
+      en: 'Thai mango sticky rice is a classic Southeast Asian dessert, combined with chess culture.',
+      ja: 'タイマンゴーもち米は東南アジアの定番デザート、チェス文化と融合。'
+    },
+    specifications: {
+      weight: '芭蕉叶托盘、椰浆酱料',
+      shelfLife: '全年常销',
+      ingredients: '糯米、芒果、椰浆、白糖等',
+      storage: '冷藏保存'
+    }
+  },
+
+  // ========== 东南亚风味系列 ==========
+  {
+    id: 'pastry-011',
+    name: {
+      zh: '「班兰·双色」糕糕糕',
+      en: 'Pandan Dual-Color Cake',
+      ja: '「パンダン·2色」ケーキ'
+    },
+    description: {
+      zh: '马来西亚班兰双色糕点，32枚棋型糕点，融合南洋香草与中国糕点，全年常销。',
+      en: 'Malaysian pandan dual-color pastry with 32 chess-shaped pieces.',
+      ja: 'マレーシアパンダン2色お菓子、32個のチェス型お菓子入り。'
+    },
+    price: 128.00,
+    stock: 90,
+    images: [
+      '/images/products/banlan-shuangse-1.jpg',
+      '/images/products/banlan-shuangse-2.jpg'
+    ],
+    category: 'southeast-asia',
+    season: 'all-year',
+    market: 'malaysia-singapore',
+    theme: '南洋香草+中国糕点',
+    packaging: '32枚棋型糕点',
+    occasion: '南洋午茶、佳节礼',
+    heritageStory: {
+      zh: '班兰叶是东南亚特色香料，双色糕点象征文化融合，传承南洋风味。',
+      en: 'Pandan leaves are a Southeast Asian specialty, dual-color pastries symbolize cultural fusion.',
+      ja: 'パンダンリーフは東南アジアの特産香料、2色お菓子は文化融合を象徴。'
+    },
+    specifications: {
+      weight: '藤编柜托盘、椰糖酱',
+      shelfLife: '全年常销',
+      ingredients: '糯米粉、班兰叶、椰浆、白糖等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-012',
+    name: {
+      zh: '「九层·糕」糕点连盒智糕',
+      en: 'Nine-Layer Cake Gift Box',
+      ja: '「九層·糕」ギフトボックス'
+    },
+    description: {
+      zh: '马来西亚九层糕礼盒，36块九层糕糕，融合娘惹九层糕乐与中国糕点，全年常销。',
+      en: 'Malaysian nine-layer cake gift box with 36 pieces.',
+      ja: 'マレーシア九層ケーキギフトボックス、36個入り。'
+    },
+    price: 148.00,
+    stock: 70,
+    images: [
+      '/images/products/jiuceng-gao-1.jpg',
+      '/images/products/jiuceng-gao-2.jpg'
+    ],
+    category: 'southeast-asia',
+    season: 'all-year',
+    market: 'malaysia-singapore-indonesia',
+    theme: '娘惹九层糕乐',
+    packaging: '36块九层糕糕',
+    occasion: '慧意度假、个人收藏',
+    heritageStory: {
+      zh: '九层糕是娘惹文化代表，层层叠叠寓意步步高升，融合中华与马来文化。',
+      en: 'Nine-layer cake represents Peranakan culture, layers symbolize rising success.',
+      ja: '九層ケーキはプラナカン文化の代表、層は成功の上昇を象徴。'
+    },
+    specifications: {
+      weight: '慧意说明书',
+      shelfLife: '全年常销',
+      ingredients: '糯米粉、椰浆、班兰叶、白糖等',
+      storage: '冷藏保存'
+    }
+  },
+  {
+    id: 'pastry-013',
+    name: {
+      zh: '「飞行棋·趣」家庭欢乐套餐',
+      en: 'Flying Chess Family Fun Set',
+      ja: '「飛行棋·趣」ファミリーセット'
+    },
+    description: {
+      zh: '山海经飞行棋套餐，16枚卡通包子，融合山海经文化，全年常销，适合亲子互动。',
+      en: 'Shan Hai Jing flying chess set with 16 cartoon buns.',
+      ja: '山海経飛行棋セット、16個のカートゥーン包子入り。'
+    },
+    price: 98.00,
+    stock: 120,
+    images: [
+      '/images/products/feixingqi-qu-sea-1.jpg',
+      '/images/products/feixingqi-qu-sea-2.jpg'
+    ],
+    category: 'southeast-asia',
+    season: 'all-year',
+    market: 'global',
+    theme: '山海经·飞行棋',
+    packaging: '16枚卡通包子',
+    occasion: '亲子互动、国际课堂',
+    heritageStory: {
+      zh: '山海经神兽与飞行棋结合，让孩子在游戏中了解中国神话文化。',
+      en: 'Shan Hai Jing mythical creatures combined with flying chess, educational for children.',
+      ja: '山海経の神獣と飛行棋を融合、子供が遊びながら中国神話文化を学ぶ。'
+    },
+    specifications: {
+      weight: '山海经卷轴地图',
+      shelfLife: '全年常销',
+      ingredients: '小麦粉、白糖、食用油、可可粉等',
+      storage: '常温避光保存'
+    }
+  },
+  {
+    id: 'pastry-014',
+    name: {
+      zh: '「椰糖·将帅」家棋风味酥',
+      en: 'Coconut Sugar Chess Pastry',
+      ja: '「ココナッツシュガー·将帥」チェスお菓子'
+    },
+    description: {
+      zh: '马来西亚椰糖风味酥，32枚棋型糕点，融合南洋椰糖与中国象棋，全年常销。',
+      en: 'Malaysian coconut sugar chess pastry with 32 chess-shaped pieces.',
+      ja: 'マレーシアココナッツシュガーチェスお菓子、32個のチェス型お菓子入り。'
+    },
+    price: 138.00,
+    stock: 85,
+    images: [
+      '/images/products/yetang-jiangshuai-1.jpg',
+      '/images/products/yetang-jiangshuai-2.jpg'
+    ],
+    category: 'southeast-asia',
+    season: 'all-year',
+    market: 'malaysia-singapore',
+    theme: '南洋椰糖+中国象棋',
+    packaging: '32枚棋型糕点',
+    occasion: '焦叶棋盘、椰糖收纳盒',
+    heritageStory: {
+      zh: '椰糖是东南亚传统甜味剂，与中国象棋文化结合，打造独特南洋风味。',
+      en: 'Coconut sugar is a traditional Southeast Asian sweetener, combined with Chinese chess culture.',
+      ja: 'ココナッツシュガーは東南アジアの伝統的な甘味料、中国象棋文化と融合。'
+    },
+    specifications: {
+      weight: '焦叶棋盘、椰糖收纳盒',
+      shelfLife: '全年常销',
+      ingredients: '小麦粉、椰糖、椰浆、白糖等',
+      storage: '常温避光保存'
+    }
+  }
+];
+
+/**
+ * 糕点分类配置
+ */
+export const pastryCategories = {
+  'core-classic': {
+    zh: '核心经典系列',
+    en: 'Core Classic Series',
+    ja: 'コアクラシックシリーズ'
+  },
+  'festival-limited': {
+    zh: '节庆限定系列',
+    en: 'Festival Limited Series',
+    ja: '祭り限定シリーズ'
+  },
+  'southeast-asia': {
+    zh: '东南亚风味系列',
+    en: 'Southeast Asia Flavor Series',
+    ja: '東南アジア風味シリーズ'
+  }
+};
+
+/**
+ * 获取所有产品
+ */
+export const getAllProducts = () => {
+  return beijingStylePastries;
+};
+
+/**
+ * 根据ID获取产品
+ */
+export const getProductById = (id) => {
+  return beijingStylePastries.find(product => product.id === id);
+};
+
+/**
+ * 根据分类获取产品
+ */
+export const getProductsByCategory = (category) => {
+  return beijingStylePastries.filter(product => product.category === category);
+};
+
+/**
+ * 搜索产品
+ */
+export const searchProducts = (keyword, language = 'zh') => {
+  if (!keyword) return [];
+  
+  const lowerKeyword = keyword.toLowerCase();
+  
+  return beijingStylePastries.filter(product => {
+    const name = product.name?.[language]?.toLowerCase() || '';
+    const description = product.description?.[language]?.toLowerCase() || '';
+    
+    return name.includes(lowerKeyword) || description.includes(lowerKeyword);
+  });
+};

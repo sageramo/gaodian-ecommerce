@@ -1,0 +1,43 @@
+.product-grid {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.product-grid-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+.product-grid-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .product-grid {
+    padding: 8px 0;
+  }
+}
+
+/* 大屏幕优化 - 显示更多列 */
+@media (min-width: 1600px) {
+  .product-grid .ant-col-xxl-4 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .product-grid .ant-col-xxl-4 {
+    flex: 0 0 14.285714%;
+    max-width: 14.285714%;
+  }
+}
