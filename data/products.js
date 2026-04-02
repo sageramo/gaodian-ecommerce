@@ -21,7 +21,7 @@ export const beijingStylePastries = [
     },
     price: 168.00,
     stock: 100,
-    images: ['public/images/products/pastry-001.jpg'],
+    images: ['gaodian-ecommerce/public/images/products/pastry-001.jpg'],
     category: 'core-classic',
     season: 'all-year',
     market: 'global',
