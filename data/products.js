@@ -190,7 +190,7 @@ export const beijingStylePastries = [
     },
     price: 158.00,
     stock: 100,
-    images: 'public/images/products/pastry-006.jpg'
+    images: 'public/images/products/pastry-006.jpg',
     category: 'festival-limited',
     season: 'christmas',
     seasonPeriod: '12月',
