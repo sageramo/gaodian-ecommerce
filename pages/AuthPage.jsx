@@ -94,7 +94,7 @@ const AuthPage = () => {
       <div className="auth-page-container">
         <div className="auth-page-content">
           <div className="auth-page-brand">
-            <h1 className="auth-page-title">糕点情报局</h1>
+            <h1 className="auth-page-title brand-name brand-name--on-dark">糕点情报局</h1>
             <p className="auth-page-description">
               {t('heritage.title')} · {t('product.category')}
             </p>
