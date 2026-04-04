@@ -4,6 +4,9 @@
 /* Import CSS Variables */
 @import 'variables.css';
 
+/* Brand typography (糕点情报局) */
+@import './styles/brand.css';
+
 /* Import Global Styles */
 @import './styles/global.css';
 
