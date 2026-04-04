@@ -84,7 +84,7 @@ const Header = () => {
             alt="糕点情报局" 
             className="logo-image"
           />
-          <span className="logo-text">糕点情报局</span>
+          <span className="logo-text brand-name brand-name--on-light">糕点情报局</span>
         </div>
 
         {/* Desktop Navigation */}
