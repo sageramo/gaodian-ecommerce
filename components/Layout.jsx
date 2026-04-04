@@ -18,7 +18,9 @@ const Layout = () => {
       <Footer className="layout-footer">
         <div className="footer-content">
           <div className="footer-text">
-            糕点情报局 ©2024 - {t('heritage.title')}
+            <span className="brand-name brand-name--on-dark">糕点情报局</span>
+            {' '}
+            ©2024 - {t('heritage.title')}
           </div>
           <div className="footer-links">
             <a href="/heritage">{t('nav.heritage')}</a>
