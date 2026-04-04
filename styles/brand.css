@@ -1,0 +1,45 @@
+/* 品牌名「糕点情报局」共用字形（与 index.html 中 Google Fonts 一致） */
+.brand-name {
+  font-family: 'ZCOOL XiaoWei', 'Ma Shan Zheng', 'KaiTi', '楷体', serif;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+}
+
+/* 浅色顶栏 / 米黄底：暖棕焦糖渐变 */
+.brand-name--on-light {
+  background: linear-gradient(
+    165deg,
+    #4a3428 0%,
+    #6b4423 35%,
+    #8b5a2b 65%,
+    #a67c52 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(255, 250, 245, 0.35))
+    drop-shadow(0 2px 2px rgba(62, 39, 24, 0.12));
+  transition: filter 0.25s ease;
+}
+
+.header-logo:hover .brand-name--on-light {
+  filter: drop-shadow(0 1px 1px rgba(255, 250, 245, 0.45))
+    drop-shadow(0 2px 3px rgba(62, 39, 24, 0.18));
+}
+
+/* 深色底 / 高饱和背景（页脚、登录页）：暖金渐变 */
+.brand-name--on-dark {
+  background: linear-gradient(
+    180deg,
+    #fffef9 0%,
+    #f5e6d3 40%,
+    #d4a574 85%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
